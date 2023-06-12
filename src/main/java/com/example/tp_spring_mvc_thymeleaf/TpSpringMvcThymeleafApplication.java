@@ -26,7 +26,7 @@ public class TpSpringMvcThymeleafApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
     patientRepository.save(new Patient(null,"Mohamed",new Date(),false,200));
     patientRepository.save(new Patient(null,"Hanane",new Date(),true,600));
-    patientRepository.save(new Patient(null,"Imane",new Date(),false,287));
+    patientRepository.save(new Patient(null,"chaimae",new Date(),false,287));
     }
 
     @Bean
@@ -41,7 +41,7 @@ public class TpSpringMvcThymeleafApplication implements CommandLineRunner {
                     User.withUsername("user2").password(passwordEncoder.encode("12345")).roles("USER").build()
             );
             jdbcUserDetailsManager.createUser(
-                User.withUsername("imane").password(passwordEncoder.encode("12345")).roles("USER").build()
+                User.withUsername("chaimae").password(passwordEncoder.encode("12345")).roles("USER").build()
             );
              jdbcUserDetailsManager.createUser(
                      User.withUsername("admin").password(passwordEncoder.encode("12345")).roles("USER","ADMIN").build()
